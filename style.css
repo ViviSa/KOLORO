@@ -1,0 +1,197 @@
+@font-face {
+  font-family: 'GothamPro-Black';
+  src: url('fonts1/GothamPro-Black.eot?#iefix') format('embedded-opentype'), 
+    url('fonts1/GothamPro-Black.woff') format('woff'),
+    url('fonts1/GothamPro-Black.ttf')  format('truetype'), 
+    url('fonts1/GothamPro-Black.svg#GothamPro-Black') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamPro-BlackItalic';
+  src: url('fonts2/GothamPro-BlackItalic.eot?#iefix') format('embedded-opentype'),  
+  url('fonts2/GothamPro-BlackItalic.woff') format('woff'), 
+  url('fonts2/GothamPro-BlackItalic.ttf')  format('truetype'), 
+  url('fonts2/GothamPro-BlackItalic.svg#GothamPro-BlackItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamPro';
+  src: url('fonts3/GothamPro.eot?#iefix') format('embedded-opentype'),  
+  url('fonts3/GothamPro.woff') format('woff'), 
+  url('fonts3/GothamPro.ttf')  format('truetype'), 
+  url('fonts3/GothamPro.svg#GothamPro') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamPro-Bold';
+  src: url('fonts4/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),  
+  url('fonts4/GothamPro-Bold.woff') format('woff'), 
+  url('fonts4/GothamPro-Bold.ttf')  format('truetype'), 
+  url('fonts4/GothamPro-Bold.svg#GothamPro-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  height: 100%;
+}
+body {
+	height: 100%;
+	max-height: 100%; 
+	background: url(img/cover.jpg); 
+	/* background: 
+	linear-gradient(to top left, #c04481, transparent 54%),
+	linear-gradient(to right, rgba(163,65,147,1) 0%, rgba(192,65,126,1) 19%, rgba(220,83,94,1) 51%, rgba(222,89,89,1) 62%, rgba(228,119,72,1) 83%, rgba(234,160,49,1) 100%);
+	  */
+ 	background-size: 200% 200%;
+  	animation: 30s infinite linear animate-v, 30s infinite ease animate-h;
+}
+@-webkit-keyframes animate-h {
+  from { background-position-x: 0%; }
+  to { background-position-x: 200%; }
+}
+
+@-webkit-keyframes animate-v {
+  from { background-position-y: -200%; }
+  to { background-position-y: 200%; }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1230px;
+        margin: 0 auto;
+  		max-height: 100%;
+    }
+}
+.logo {
+	margin-top: 45px;
+}
+.logo span {
+	position: relative;
+	bottom: 9px;
+	left: 25px;
+	color: white;
+	font-weight: bold;
+	font-size: 8px;
+	display: flex;
+	letter-spacing: 6px;
+    word-spacing: 1px;
+}
+.logo__img {
+	position: relative;
+}
+.title {
+	margin-top: 46px;
+	margin-bottom: 40px;
+	position: relative;
+	z-index: 9;
+	color: white;
+	font-weight: bold;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-family: 'GothamPro-Black';
+	line-height: 38px;
+	letter-spacing: 1.4px;
+}
+.title p span {
+	font-style: bold;
+	font-family: 'GothamPro-BlackItalic';
+}
+.text p {
+	position: relative;
+	z-index: 9;
+	font-size: 14px;
+	color: white;
+	font-family: 'GothamPro';
+	line-height: 17px;
+}
+.tagline p {
+	margin-bottom: 28px;
+	color: white;
+	text-transform: uppercase;
+	font-family: 'GothamPro-Bold';
+	font-size: 14px;
+	line-height: 18px;
+}
+.form input {
+	width: 260px;
+	max-width: 100%;
+	padding-top: 20px;
+	display: flex;
+	border-style: none;
+	border-bottom: 2px solid white;
+	background-color: transparent;
+	font-size: 14px;
+	font-family: 'GothamPro';
+}
+.form {
+	margin-bottom: 13px;
+}
+input[type="text"]::placeholder { color: white; font-family: 'GothamPro';} 
+.button button {
+	padding: 13px 68px;
+	margin-top: 20px;
+	color: black;
+	background: white;
+	border-radius: 50px;
+	border: none;
+	font-size: 11px;
+	text-transform: uppercase;
+	font-family: 'GothamPro-Bold';
+	cursor: pointer;
+}
+.button button:hover {
+	background: #ea9e32;
+	color: white;
+}
+.circle {
+	position: absolute;
+    left: -178px;
+    z-index: 1;
+    bottom: -68px;
+}
+.king {
+	position: absolute;
+	z-index: 9;
+	top: 78px;
+}
+.allImg{
+	position: absolute;
+	z-index: 1;
+	left: -156px;
+	bottom: -68px;
+}
+@media screen and (max-width: 1000px){
+	.allImg {
+		display: none;
+	}
+	body {
+    	height: 785px;
+	}
+	
+}
+@media screen and (max-width: 1200px){
+	body {
+		height: 785px;
+	}
+	.allImg {
+	    left: -209px;
+    	bottom: -53px;
+	}
+}
+/*-------------------------------------------------
+	Smartphones
+---------------------------------------------------*/
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px) {
+	body {
+		height: 840px;
+	}
+}
